@@ -1,0 +1,9 @@
+# Rubymine
+.idea
+
+#RVM
+.rvmrc
+
+#Other
+.DS_Store
+*.gem
