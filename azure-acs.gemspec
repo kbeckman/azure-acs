@@ -1,20 +1,19 @@
 # -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'azure-acs/version'
+require File.expand_path('../lib/azure-acs/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = 'azure-acs'
   gem.version       = Azure::Acs::VERSION
-  gem.authors       = ['kbeckman']
+  gem.description   = 'A lightweight Ruby client library for Azure Active Directory ACS.'
+  gem.summary       = 'Azure Active Directory ACS Ruby client library.'
+
+  gem.authors       = ['Keith Beckman']
   gem.email         = ['kbeckman.c4sc@gmail.com']
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
   gem.homepage      = 'https://github.com/kbeckman/azure-acs'
 
-  gem.add_development_dependency 'rspec'
+  gem.add_runtime_dependency 'typhoeus', '~> 0.4.2'
 
-  gem.add_runtime_dependency 'typhoeus', '~> 0.5.4'
+  gem.add_development_dependency 'rspec'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
