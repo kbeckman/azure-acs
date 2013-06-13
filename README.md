@@ -1,9 +1,13 @@
 # Azure-ACS #
 
-The OmniAuth-WSFed authentication strategy can be used with the following technologies
-under scenarios requiring the [WS-Federation protocol](﻿http://msdn.microsoft.com/en-us/library/bb498017.aspx)
-for authentication. These services are typically used for Identity Federation and Single
-Sign-On across large organizations or authentication domains.
+Azure-ACS is a lightweight Ruby client library that exposes some some of the access control features
+of Microsoft's [Windows Azure Active Directory](http://www.windowsazure.com/en-us/solutions/identity/)
+(formerly Access Control Service).
+
+### Features ###
+
+* Ingegration with the ACS [Identity Provider JSON feed]
+(http://msdn.microsoft.com/en-us/library/windowsazure/gg185963.aspx).
 
 
 ## Installation ##
