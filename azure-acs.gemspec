@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.email         = ['kbeckman.c4sc@gmail.com']
   gem.homepage      = 'https://github.com/kbeckman/azure-acs'
 
-  gem.add_runtime_dependency 'typhoeus', '~> 0.4.2'
+  gem.add_runtime_dependency 'typhoeus'
 
   gem.add_development_dependency 'rspec'
 
